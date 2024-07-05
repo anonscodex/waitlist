@@ -15,7 +15,8 @@ const Header = () => {
         <Logo />
       </div>
       <div className="p-8 rounded-lg shadow-lg w-full md:w-1/4">
-        <h2 className="text-2xl font-bold mb-8 text-center">Join the Waitlist</h2>
+        <h2 className="text-1xl font-bold mb-8 text-center">Join the <span className='text-indigo-700'>Waitlist</span> for the next big thing that provide 
+        a place for skilled service provider</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-300">
