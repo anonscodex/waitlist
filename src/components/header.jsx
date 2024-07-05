@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from './logo';
+import FloatingImage from './FloatingImage';
+import FloatingImage2 from './Floatingimage2';
 
 const Header = () => {
   const handleSubmit = (event) => {
@@ -10,11 +12,15 @@ const Header = () => {
   };
 
   return ( 
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex flex-row justify-center items-center sm: flex-col">
+      <div className='m-10'>
+      <FloatingImage />
+      </div>
+      
+      <div className="p-8 rounded-lg shadow-lg w-full md:w-1/4">
       <div className="mb-8">
         <Logo />
       </div>
-      <div className="p-8 rounded-lg shadow-lg w-full md:w-1/4">
         <h2 className="text-1xl font-bold mb-8 text-center">Join the <span className='text-indigo-700'>Waitlist</span> for the next big thing that provide 
         a place for skilled service provider</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
@@ -41,6 +47,7 @@ const Header = () => {
           </div>
         </form>
       </div>
+      
     </div>
   );
 };
