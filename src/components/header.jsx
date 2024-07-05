@@ -12,12 +12,14 @@ const Header = () => {
   };
 
   return ( 
-    <div className="min-h-screen flex flex-row justify-center items-center sm: flex-col">
-      <div className='m-10'>
+    <div className="min-h-screen flex flex-col justify-center items-center ">
+      <div className='m-10 flex flex-row'>
       <FloatingImage />
+      <FloatingImage2 />
+
       </div>
       
-      <div className="p-8 rounded-lg shadow-lg w-full md:w-1/4">
+      <div className="p-8 rounded-lg shadow-lg w-full md:w-1/4 justify-center">
       <div className="mb-8">
         <Logo />
       </div>
