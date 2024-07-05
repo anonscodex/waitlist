@@ -20,7 +20,7 @@ const Header = () => {
       </div>
       
       <div className="p-8 rounded-lg shadow-lg w-full md:w-1/4 justify-center">
-      <div className="mb-8">
+      <div className="mb-8 items-center">
         <Logo />
       </div>
         <h2 className="text-1xl font-bold mb-8 text-center">Join the <span className='text-indigo-700'>Waitlist</span> for the next big thing that provide 
